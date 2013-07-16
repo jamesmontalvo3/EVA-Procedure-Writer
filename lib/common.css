@@ -1,0 +1,34 @@
+body {
+	
+}
+
+#tabs {
+	margin : 10px auto 10px auto;
+	height : 400px;
+}
+
+#editor table {
+	width : 100%;
+}
+
+#editor table.td {
+	width : 33%;
+}
+
+#editor textarea {
+	width : 95%;
+	display : block;
+	margin : 0 auto 0 auto;
+}
+
+#raw textarea {
+	width : 95%;
+	height : 200px;
+	display : block;
+	margin : 0 auto 0 auto;
+}
+
+.buttons {
+	width : 100%;
+	margin : 10px 0 10px 0;
+}
