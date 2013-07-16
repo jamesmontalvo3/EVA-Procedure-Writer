@@ -1,0 +1,77 @@
+# Headers
+{
+    "title" : "PVR 2B FQDC Demate",
+    "columns" : ["IV", "EV1", "EV2"],
+    "minutes" : 50
+}
+
+# Content
+================
+@@ Col "IV"
+
+@@ Col "EV1"
+# Perform EAS Jumper Reconfig steps until EV2 arrives. Break out of EAS procedure when EV2 ready for FQDC ops.
+
+@@ Col "EV2"
+# {{#Set_PGT: A7 | CCW2 | 30.5 | 7/16" x 12" wobble }}
+
+# Approach FQDC Cover from zenith side (2B/STCR) of EAS Jumpers.  Release (2) FQDC Cover bolts, ~7 turns.
+    ____ H5 turns (close to 5334)
+    ____ H6 turns (far from 5334)
+    
+================
+@@ Col "IV"
+
+
+@@ Col "EV1"
+# Receive PGT from EV2
+
+@@ Col "EV2"
+# Transfer PGT to EV1
+
+
+================
+@@ Col "IV"
+# <% Set_PGT(A7, CCW2, 30.5, 7/16" x 12" wobble) %>
+
+# Approach FQDC cover form the nadir side of EAS jumpers (4B/Keel side); release (2) FQDC cover bolts ~7 turns
+    ____ H8 turns (far from 5335)
+    ____ H9 turns (close to 5335)
+
+@@ Col "EV1"
+
+@@ Col "EV2"
+
+================
+@@ Col "IV"
+
+@@ Col "EV1"
+# Transfer PGT to EV2
+
+# Remove cover; restrain with RET to HR 5340 (4B IEA)
+
+# BRT to handrail 5335
+
+@@ Col "EV2"
+# Receive PGT from EV1
+
+
+================
+@@ Col "IV"
+
+
+@@ Col "EV1"
+# Receive PGT from EV2
+
+@@ Col "EV2"
+# Transfer PGT from EV1
+
+================
+@@ Col "IV"
+
+
+@@ Col "EV1"
+
+
+@@ Col "EV2"
+
