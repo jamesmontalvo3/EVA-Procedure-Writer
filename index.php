@@ -6,7 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="lib/common.css" />
 		<link id="jquery-ui-css" rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/vader/jquery-ui.min.css" />
 		<script src="lib/common.js"></script>
-		<!-- http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/ui-lightness/jquery-ui.min.css -->
+		<script src="lib/parser.js"></script>
 	</head>
 <body>
 	<div style="text-align: right;">
@@ -52,6 +52,11 @@
 			<li><a href="#raw">Raw</a></li>
 			<li><a href="#display">Display</a></li>
 		</ul>
+		<!--
+		
+			Editor
+
+		-->
 		<div id="editor">
 			<table>
 				<tr><th>IV / SSRMS</th><th>EV1</th><th>EV2</th></tr>
@@ -64,13 +69,31 @@
 				<button style="float:right;">Convert to Raw &rarr;</button>
 			</div>
 		</div>
+		<!--
+			
+			Raw 
+		
+		-->
 		<div id="raw">
-			<textarea></textarea>
+			<textarea># Step 1 
+# Step 2
+This is a line without steps
+Another line without steps
+
+
+There are two lines above this without content
+The second line has three spaces, though
+#Step 3 (no space after hash)</textarea>
 		  	<div class="buttons">
 		  		<button style="float:left;">&larr; Convert to Editor</button>
-		  		<button style="float:right;">Render in Display &rarr;</button>
+		  		<button id="raw-to-display" style="float:right;">Render in Display &rarr;</button>
 		  	</div>
 		</div>
+		<!--
+			
+			Display
+
+		-->
 	  	<div id="display">This is where the final display will be</div>
 	</div>
 </body>
